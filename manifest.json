@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Focus",
+    "version": "1.0",
+    "description": "Youtube is not what you want to be doing right now",
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["jquery.min.js", "./ChromeExtensionMain.js"],
+            "css": ["index.css"]
+        }
+    ]
+}
